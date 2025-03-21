@@ -1,0 +1,9 @@
+[2025-03-18 08:17:28] [INFO]: {'enable_float16': True, 'with_test': False, 'fix_BN': False, 'log_iter': 100, 'restore_ckpt_strict': True, 'optimizer_reset': False, 'scheduler_reset': False, 'restore_hint': 0, 'save_iter': 10000, 'save_name': 'hstl_SIL', 'sync_BN': True, 'total_iter': 90000, 'sampler': {'batch_shuffle': True, 'batch_size': [8, 8], 'frames_num_fixed': 30, 'frames_num_max': 50, 'frames_num_min': 25, 'sample_type': 'fixed_ordered', 'type': 'TripletSampler', 'view_label': False, 'frames_skip_num': 0}, 'transform': [{'type': 'BaseSilCuttingTransform'}], 'enable_distributed': True}
+[2025-03-18 08:17:28] [INFO]: {'model': 'HSTL', 'channels': [32, 64, 128], 'class_num': 571}
+[2025-03-18 08:17:28] [INFO]: {'dataset_name': 'CCGR-MINI', 'dataset_root': '/content/CCGR-MINI', 'num_workers': 1, 'dataset_partition': './datasets/CCGR-MINI/CCGR-MINI.json', 'remove_no_gallery': False, 'cache': False, 'binary': False, 'data_in_use': 'sil', 'test_dataset_name': 'CCGR-MINI'}
+[2025-03-18 08:17:28] [INFO]: -------- Train Pid List --------
+[2025-03-18 08:17:28] [INFO]: [1, 2, ..., 600]
+[2025-03-18 08:17:32] [INFO]: {'lr': 0.0001, 'momentum': 0.9, 'solver': 'Adam', 'weight_decay': 0.0005}
+[2025-03-18 08:17:32] [INFO]: {'gamma': 0.1, 'milestones': [70000], 'scheduler': 'MultiStepLR'}
+[2025-03-18 08:17:33] [INFO]: Parameters Count: 9.38980M
+[2025-03-18 08:17:33] [INFO]: Model Initialization Finished!

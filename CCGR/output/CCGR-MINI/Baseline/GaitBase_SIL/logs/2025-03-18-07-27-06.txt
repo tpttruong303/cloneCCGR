@@ -1,0 +1,10 @@
+[2025-03-18 07:27:06] [INFO]: {'enable_float16': False, 'restore_ckpt_strict': True, 'restore_hint': 100, 'save_name': 'GaitBase_SIL', 'eval_func': 'evaluate_CCGR_MINI', 'sampler': {'batch_size': 16, 'sample_type': 'all_ordered', 'type': 'InferenceSampler', 'batch_shuffle': False, 'frames_all_limit': 720}, 'transform': [{'type': 'BaseSilCuttingTransform'}], 'metric': 'euc', 'cross_view_gallery': False}
+[2025-03-18 07:27:06] [INFO]: {'model': 'Baseline', 'backbone_cfg': {'type': 'ResNet9', 'block': 'BasicBlock', 'channels': [64, 128, 256, 512], 'layers': [1, 1, 1, 1], 'strides': [1, 2, 2, 1], 'maxpool': False}, 'SeparateFCs': {'in_channels': 512, 'out_channels': 256, 'parts_num': 16}, 'SeparateBNNecks': {'class_num': 571, 'in_channels': 256, 'parts_num': 16}, 'bin_num': [16]}
+[2025-03-18 07:27:06] [INFO]: {'dataset_name': 'CCGR-MINI', 'dataset_root': '/content/CCGR-MINI', 'num_workers': 1, 'dataset_partition': './datasets/CCGR-MINI/CCGR-MINI.json', 'remove_no_gallery': False, 'cache': False, 'binary': False, 'data_in_use': 'sil', 'test_dataset_name': 'CCGR-MINI'}
+[2025-03-18 07:27:06] [INFO]: -------- Test Pid List --------
+[2025-03-18 07:27:06] [INFO]: [601, 602, ..., 1000]
+[2025-03-18 07:27:07] [INFO]: Restore Parameters from output/CCGR-MINI/Baseline/GaitBase_SIL/checkpoints/GaitBase_SIL-00100.pt !!!
+[2025-03-18 07:27:08] [INFO]: Parameters Count: 9.34112M
+[2025-03-18 07:27:08] [INFO]: Model Initialization Finished!
+[2025-03-18 07:42:32] [INFO]: The test metric you choose is euc.
+[2025-03-18 07:43:07] [INFO]: {'scalar/test_accuracy/Rank-1': np.float32(0.81707686), 'scalar/test_accuracy/Rank-5': np.float32(2.6401796), 'scalar/test_accuracy/Rank-10': np.float32(4.432642), 'scalar/test_accuracy/mAP': np.float64(1.5447711140052898), 'scalar/test_accuracy/mINP': np.float64(0.4020245979770616)}

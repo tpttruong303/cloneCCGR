@@ -1,0 +1,27 @@
+[2025-03-18 08:40:27] [INFO]: {'enable_float16': True, 'with_test': False, 'fix_BN': False, 'log_iter': 100, 'restore_ckpt_strict': True, 'optimizer_reset': False, 'scheduler_reset': False, 'restore_hint': 0, 'save_iter': 10000, 'save_name': 'hstl_SIL', 'sync_BN': True, 'total_iter': 90000, 'sampler': {'batch_shuffle': True, 'batch_size': [8, 8], 'frames_num_fixed': 30, 'frames_num_max': 50, 'frames_num_min': 25, 'sample_type': 'fixed_ordered', 'type': 'TripletSampler', 'view_label': False, 'frames_skip_num': 0}, 'transform': [{'type': 'BaseSilCuttingTransform'}], 'enable_distributed': True}
+[2025-03-18 08:40:27] [INFO]: {'model': 'HSTL', 'channels': [32, 64, 128], 'class_num': 571}
+[2025-03-18 08:40:27] [INFO]: {'dataset_name': 'CCGR-MINI', 'dataset_root': '/content/CCGR-MINI', 'num_workers': 1, 'dataset_partition': './datasets/CCGR-MINI/CCGR-MINI.json', 'remove_no_gallery': False, 'cache': False, 'binary': False, 'data_in_use': 'sil', 'test_dataset_name': 'CCGR-MINI'}
+[2025-03-18 08:40:27] [INFO]: -------- Train Pid List --------
+[2025-03-18 08:40:27] [INFO]: [1, 2, ..., 600]
+[2025-03-18 08:40:28] [INFO]: {'lr': 0.0001, 'momentum': 0.9, 'solver': 'Adam', 'weight_decay': 0.0005}
+[2025-03-18 08:40:28] [INFO]: {'gamma': 0.1, 'milestones': [70000], 'scheduler': 'MultiStepLR'}
+[2025-03-18 08:40:28] [INFO]: Parameters Count: 9.38980M
+[2025-03-18 08:40:28] [INFO]: Model Initialization Finished!
+[2025-03-18 08:42:33] [INFO]: Iteration 00100, Cost 126.73s, triplet_loss=0.2218, triplet_hard_loss=0.7834, triplet_loss_num=23901.2520, triplet_mean_dist=0.4054, softmax_loss=6.3476, softmax_accuracy=0.0012
+[2025-03-18 08:44:42] [INFO]: Iteration 00200, Cost 128.71s, triplet_loss=0.2011, triplet_hard_loss=0.6759, triplet_loss_num=23744.7598, triplet_mean_dist=0.3477, softmax_loss=6.3473, softmax_accuracy=0.0017
+[2025-03-18 08:46:50] [INFO]: Iteration 00300, Cost 128.34s, triplet_loss=0.2005, triplet_hard_loss=0.6884, triplet_loss_num=23399.9160, triplet_mean_dist=0.3412, softmax_loss=6.3473, softmax_accuracy=0.0010
+[2025-03-18 08:48:58] [INFO]: Iteration 00400, Cost 127.73s, triplet_loss=0.2002, triplet_hard_loss=0.6938, triplet_loss_num=23116.0684, triplet_mean_dist=0.3385, softmax_loss=6.3471, softmax_accuracy=0.0031
+[2025-03-18 08:51:05] [INFO]: Iteration 00500, Cost 127.28s, triplet_loss=0.2002, triplet_hard_loss=0.7003, triplet_loss_num=22869.9883, triplet_mean_dist=0.3375, softmax_loss=6.3472, softmax_accuracy=0.0028
+[2025-03-18 08:53:13] [INFO]: Iteration 00600, Cost 127.86s, triplet_loss=0.1997, triplet_hard_loss=0.6998, triplet_loss_num=22708.4102, triplet_mean_dist=0.3353, softmax_loss=6.3470, softmax_accuracy=0.0026
+[2025-03-18 08:55:21] [INFO]: Iteration 00700, Cost 127.86s, triplet_loss=0.1998, triplet_hard_loss=0.7120, triplet_loss_num=22472.7520, triplet_mean_dist=0.3394, softmax_loss=6.3467, softmax_accuracy=0.0024
+[2025-03-18 08:57:30] [INFO]: Iteration 00800, Cost 128.99s, triplet_loss=0.1992, triplet_hard_loss=0.7082, triplet_loss_num=22427.5996, triplet_mean_dist=0.3354, softmax_loss=6.3473, softmax_accuracy=0.0021
+[2025-03-18 08:59:38] [INFO]: Iteration 00900, Cost 127.95s, triplet_loss=0.1998, triplet_hard_loss=0.7111, triplet_loss_num=22306.8730, triplet_mean_dist=0.3364, softmax_loss=6.3467, softmax_accuracy=0.0029
+[2025-03-18 09:01:46] [INFO]: Iteration 01000, Cost 127.46s, triplet_loss=0.1991, triplet_hard_loss=0.7172, triplet_loss_num=22170.8086, triplet_mean_dist=0.3368, softmax_loss=6.3469, softmax_accuracy=0.0020
+[2025-03-18 09:03:54] [INFO]: Iteration 01100, Cost 128.09s, triplet_loss=0.1993, triplet_hard_loss=0.7153, triplet_loss_num=22103.2148, triplet_mean_dist=0.3358, softmax_loss=6.3468, softmax_accuracy=0.0025
+[2025-03-18 09:06:02] [INFO]: Iteration 01200, Cost 128.64s, triplet_loss=0.1993, triplet_hard_loss=0.7198, triplet_loss_num=21961.4512, triplet_mean_dist=0.3386, softmax_loss=6.3468, softmax_accuracy=0.0036
+[2025-03-18 09:08:10] [INFO]: Iteration 01300, Cost 127.77s, triplet_loss=0.1990, triplet_hard_loss=0.7196, triplet_loss_num=21984.7031, triplet_mean_dist=0.3363, softmax_loss=6.3469, softmax_accuracy=0.0019
+[2025-03-18 09:10:18] [INFO]: Iteration 01400, Cost 128.08s, triplet_loss=0.1993, triplet_hard_loss=0.7275, triplet_loss_num=21832.8008, triplet_mean_dist=0.3427, softmax_loss=6.3464, softmax_accuracy=0.0035
+[2025-03-18 09:12:26] [INFO]: Iteration 01500, Cost 127.98s, triplet_loss=0.1991, triplet_hard_loss=0.7196, triplet_loss_num=21785.9531, triplet_mean_dist=0.3369, softmax_loss=6.3467, softmax_accuracy=0.0029
+[2025-03-18 09:14:34] [INFO]: Iteration 01600, Cost 127.68s, triplet_loss=0.1995, triplet_hard_loss=0.7297, triplet_loss_num=21782.9531, triplet_mean_dist=0.3391, softmax_loss=6.3465, softmax_accuracy=0.0017
+[2025-03-18 09:16:42] [INFO]: Iteration 01700, Cost 128.49s, triplet_loss=0.1990, triplet_hard_loss=0.7282, triplet_loss_num=21643.8379, triplet_mean_dist=0.3419, softmax_loss=6.3465, softmax_accuracy=0.0053
+[2025-03-18 09:18:50] [INFO]: Iteration 01800, Cost 128.06s, triplet_loss=0.1988, triplet_hard_loss=0.7312, triplet_loss_num=21586.8125, triplet_mean_dist=0.3409, softmax_loss=6.3466, softmax_accuracy=0.0025

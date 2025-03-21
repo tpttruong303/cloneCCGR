@@ -1,0 +1,12 @@
+[2025-03-18 02:36:41] [INFO]: {'enable_float16': True, 'with_test': True, 'fix_BN': False, 'log_iter': 100, 'restore_ckpt_strict': True, 'optimizer_reset': False, 'scheduler_reset': False, 'restore_hint': 0, 'save_iter': 10000, 'save_name': 'GaitBase_SIL', 'sync_BN': True, 'total_iter': 80000, 'sampler': {'batch_shuffle': True, 'batch_size': [4, 16], 'frames_num_fixed': 30, 'frames_num_max': 40, 'frames_num_min': 20, 'sample_type': 'unfixed_unordered', 'type': 'TripletSampler', 'view_label': False}, 'transform': [{'type': 'Compose', 'trf_cfg': [{'type': 'RandomPerspective', 'prob': 0.2}, {'type': 'BaseSilCuttingTransform'}, {'type': 'RandomHorizontalFlip', 'prob': 0.2}, {'type': 'RandomRotate', 'prob': 0.2}]}]}
+[2025-03-18 02:36:41] [INFO]: {'model': 'Baseline', 'backbone_cfg': {'type': 'ResNet9', 'block': 'BasicBlock', 'channels': [64, 128, 256, 512], 'layers': [1, 1, 1, 1], 'strides': [1, 2, 2, 1], 'maxpool': False}, 'SeparateFCs': {'in_channels': 512, 'out_channels': 256, 'parts_num': 16}, 'SeparateBNNecks': {'class_num': 571, 'in_channels': 256, 'parts_num': 16}, 'bin_num': [16]}
+[2025-03-18 02:36:41] [INFO]: {'dataset_name': 'CCGR-MINI', 'dataset_root': '/content/CCGR-MINI', 'num_workers': 1, 'dataset_partition': './datasets/CCGR-MINI/CCGR-MINI.json', 'remove_no_gallery': False, 'cache': False, 'binary': False, 'data_in_use': 'sil', 'test_dataset_name': 'CCGR-MINI'}
+[2025-03-18 02:36:41] [INFO]: -------- Train Pid List --------
+[2025-03-18 02:36:41] [INFO]: [1, 2, ..., 600]
+[2025-03-18 02:36:42] [INFO]: -------- Test Pid List --------
+[2025-03-18 02:36:42] [INFO]: [601, 602, ..., 1000]
+[2025-03-18 02:36:43] [INFO]: {'lr': 0.1, 'momentum': 0.9, 'solver': 'SGD', 'weight_decay': 0.0005}
+[2025-03-18 02:36:43] [INFO]: {'gamma': 0.1, 'milestones': [30000, 55000, 65000], 'scheduler': 'MultiStepLR'}
+[2025-03-18 02:36:43] [INFO]: Parameters Count: 9.34112M
+[2025-03-18 02:36:43] [INFO]: Model Initialization Finished!
+[2025-03-18 02:39:48] [INFO]: Iteration 00100, Cost 186.89s, triplet_loss=1.4908, triplet_hard_loss=9.9886, triplet_loss_num=26846.4102, triplet_mean_dist=2.6234, softmax_loss=8.5938, softmax_accuracy=0.0022
